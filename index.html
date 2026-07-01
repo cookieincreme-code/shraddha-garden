@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Secret Garden</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="petals"></div>
+
+<!-- LOGIN SCREEN -->
+
+<section id="loginScreen">
+
+    <div class="glow"></div>
+
+    <div class="login-card">
+
+        <div class="flower-icon">
+            🌹
+        </div>
+
+        <h1>
+            Secret Garden
+        </h1>
+
+        <p class="subtitle">
+            A place where memories bloom forever.
+        </p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter our secret phrase"
+        >
+
+        <button id="unlockBtn">
+            Open The Garden
+        </button>
+
+        <p id="status">
+            Garden Gate Closed
+        </p>
+
+    </div>
+
+</section>
+
+<!-- MAIN APP -->
+
+<div id="app" class="hidden">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            🌸
+        </div>
+
+        <nav>
+
+            <button class="nav-btn active"
+                data-section="home">
+                🏠 Home
+            </button>
+
+            <button class="nav-btn"
+                data-section="letters">
+                💌 Letters
+            </button>
+
+            <button class="nav-btn"
+                data-section="gallery">
+                📸 Gallery
+            </button>
+
+            <button class="nav-btn"
+                data-section="music">
+                🎵 Music
+            </button>
+
+            <button class="nav-btn"
+                data-section="timeline">
+                🌷 Timeline
+            </button>
+
+            <button class="nav-btn"
+                data-section="future">
+                ⭐ Future
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <!-- HOME -->
+
+        <section
+
+    id="home"
+    class="page active-page">
+
+    <div class="hero-card">
+
+        <h1>
+            Hello Love ❤️
+        </h1>
+
+        <p>
+            Welcome back to our little world.
+        </p>
+
+        <div class="days-widget">
+
+            <div class="days-number"
+                 id="daysTogether">
+                 ...
+            </div>
+
+            <div class="days-label">
+                Days Together
+            </div>
+
+        </div>
+
+    </div>
+
+            <div class="quote-card">
+
+                Every memory here carries
+                a heartbeat.
+            </div>
+
+        </section>
+
+        <!-- LETTERS -->
+
+        <section
+            id="letters"
+            class="page">
+
+            <h2>Letters</h2>
+
+            <div
+                id="lettersContainer"
+                class="grid">
+            </div>
+
+        </section>
+
+        <!-- GALLERY -->
+
+        <section
+            id="gallery"
+            class="page">
+
+            <h2>Gallery</h2>
+
+            <div
+                id="galleryContainer"
+                class="grid">
+            </div>
+
+        </section>
+
+        <!-- MUSIC -->
+
+        <section
+            id="music"
+            class="page">
+
+            <h2>Music</h2>
+
+            <div
+                id="musicContainer">
+            </div>
+
+        </section>
+
+        <!-- TIMELINE -->
+
+        <section
+            id="timeline"
+            class="page">
+
+            <h2>Timeline</h2>
+
+            <div
+                id="timelineContainer">
+            </div>
+
+        </section>
+
+        <!-- FUTURE -->
+
+        <section
+            id="future"
+            class="page">
+
+            <h2>Future Dreams</h2>
+
+            <div
+                id="futureContainer">
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<!-- LOADING OVERLAY -->
+
+<div id="loadingOverlay"
+     class="hidden">
+
+    <div class="loading-box">
+
+        <h2>
+            Unlocking Memories...
+        </h2>
+
+        <p id="loadingText">
+            Preparing the garden
+        </p>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
